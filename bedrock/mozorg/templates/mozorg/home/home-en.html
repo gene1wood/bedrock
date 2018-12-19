@@ -46,14 +46,7 @@
     {% include 'mozorg/home/includes/fundraiser-eoy2018.html' %}
   {% endif %}
 
-  {% if LANG.startswith('en-') %}
-    {% include 'includes/protocol/navigation/index.html' %}
-  {% else %}
-    {% with is_home = True %}
-      {% set logo_src = static('img/pebbles/moz-wordmark-dark-reverse.svg') %}
-      {% include 'mozorg/home/includes/nav.html' %}
-    {% endwith %}
-  {% endif %}
+  {% include 'includes/protocol/navigation/index.html' %}
 {% endblock %}
 
 {% block content %}
